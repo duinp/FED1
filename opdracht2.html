@@ -22,8 +22,9 @@ Wij nemen zo nodig contact met u op nadat het formulier is verstuurd.</p>
 <p>Voor vragen of opmerkingen kunt u <a href= "#" >contact</a> met ons op nemen.</p>
 
 <form>
+<fieldset>
+    <legend><h2>Contactgegevens:</h2></legend>
 
-    <p>Contactgegevens:</p>
 Naam:
 <input type="text">
 Bedrijf:
@@ -38,58 +39,70 @@ Telefoon:
  <input type="text">
 Email:
 <input type="text">
+</fieldset>
 
-<p>Ik wil mij aanmelden voor een project:</p>
+<fieldset>
+<legend><h2>Ik wil mij aanmelden voor een project:</h2></legend>
 <input type="radio" name="sex" value="Ik wil mij aanmelden">Als stage bedrijf
 <input type="radio" name="sex" value="female">Project stage
+</section>
 
-</form>
 
-<form>
-<h2>project</h2>
+<section>
+<p>Project</p>
 
 1. Titel
 <input type="text">
 2. Opdrachtomschrijving
-<input type="text">
+<textarea name="" id="" cols="30" rows="10"></textarea>
 3. Doelgroepomschrijving
-<input type="text">
+<textarea name="" id="" cols="30" rows="10"></textarea>
 4. Doelstelling/ intentie van het project
-<input type="text">
+<textarea name="" id="" cols="30" rows="10"></textarea>
 5. Looptijd
-<input type="text">
+<input type="date">
 6. Deadline
-<input type="text">
-<p>Geschikt voor</p>
+   <input type="date">
+    </section>
+<section>
+<h3>Geschikt voor:</h3>
 1. eerstejaars studenten
-<input type="text">
+<input type="checkbox" name="eerstejaars">
 2. tweedejaars studenten
-<input type="text">
+<input type="checkbox"name="eerstejaars">
 3. derdejaars studenten
-<input type="text">
+<input type="checkbox"name="eerstejaars">
 4. afstudeer studenten
-<input type="text">
+<input type="checkbox"name="eerstejaars">
 5. onbekend
 <input type="text">
+</section>
+</fieldset>
 
-<h2>stage</h2>
-<p>Geschikt voor</p>
+<fieldset>
+<legend><h2>Stage</h2></legend>
+<h3>Geschikt voor:</h3>
+
 1. tweedejaars studenten
-<input type="text">
+<input type="radio" name="tweedejaars studenten">
 2. afstudeer studenten
-<input type="text">
+<input type="radio" name="afstudeer studenten" >
 3. onbekend
-<input type="text">
+<input type="radio" name="onbekend">
 
-1. Hoe lang is de stage?
- <input type="radio" name=" Eerste keuze " value="">10 weken
-<input type="radio" name=" Tweede keuze " value="">20 weken
 
-2. Begin datum
+<h3>Hoe lang is de stage?</h3>
+10 weken
+ <input type="radio" name="Eerste keuze" value="1">
+ 20 weken
+<input type="radio" name="Tweede keuze" value="2">
+
+<h3> Begin datum </h3>
 <input type="date">
 Beschrijving werkzaamheden:
 1. Beschrijving stagewerkzaamheden
 Beschrijving stagebedrijf
+<input type="text">
 1. Bedrijfsnaam
 <input type="text">
 2. Adres
@@ -103,8 +116,11 @@ Beschrijving stagebedrijf
 6. Core Business
 <input type="text">
 
-</form>
-Opmerking Opmerking
+<h3>Opmerking<h3>
 <input type="text">
+
+</fieldset>
+<input type="submit">
+</form>
 </body>
 </html>
